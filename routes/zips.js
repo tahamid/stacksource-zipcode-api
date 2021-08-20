@@ -138,8 +138,6 @@ router.get('/', (req, res, next) => {
       }
     }
 
-    swag.push(0)
-
     res.status(200).send({
       message: zipCodeString.slice(0, -2) // remove last comma + space
     });
